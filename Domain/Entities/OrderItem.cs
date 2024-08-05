@@ -1,8 +1,9 @@
-﻿namespace Domain.Entities;
+﻿using Domain.Abstraction;
 
-internal class OrderItem
+namespace Domain.Entities;
+
+internal class OrderItem : Entity
 {
-    public int Id { get; set; }
     public int OrderId { get; set; }
     public int ProductId { get; set; }
     public int Quantity { get; set; }

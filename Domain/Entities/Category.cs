@@ -1,11 +1,10 @@
-﻿namespace Domain.Entities;
+﻿using Domain.Abstraction;
 
-public class Category
+namespace Domain.Entities;
+
+public class Category : Entity
 {
-    public int Id { get; set; }
     public string Name { get; set; } = string.Empty;
     public string Description { get; set; } = string.Empty;
 
-    public DateTime CreatedDate { get; set; } = DateTime.Now;
-    public DateTime UpdatedDate { get; set; }
 }

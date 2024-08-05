@@ -1,10 +1,7 @@
-﻿namespace Domain.Entities;
+﻿using Domain.Abstraction;
 
-public class Order
+namespace Domain.Entities;
+
+public class Order : Entity
 {
-    public int Id { get; set; }
-
-
-    public DateTime CreatedDate { get; set; } = DateTime.Now;
-    public DateTime UpdatedDate { get; set; }
 }
